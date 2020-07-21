@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>BruinSportsAnalytics Home</h1>
+  <p>Welcome to BruinSportsAnalytics, a website developed by <em>Jeeth Pawar</em>.</p>
+  <h2>Sports Analysis</h2>
+  <p>Head over to the All Authors Tab to check out the articles. Currently there are: :</p>
+  <ul>
+    <li><strong>Articles:</strong> {{ num_articles }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+  </ul>
+{% endblock %}
