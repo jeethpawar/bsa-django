@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Article List</h1>
+  {% if article_list %}
+  <ul>
+    {% for article in article_list %}
+      <li>
+        <a href="{{ article.get_absolute_url }}">{{ article.headline }}</a> ({{article.author}})
+      </li>
+      <p><strong>Summary:</strong> {{ article.summary }}</p>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There are no articles.</p>
+  {% endif %}       
+{% endblock %}

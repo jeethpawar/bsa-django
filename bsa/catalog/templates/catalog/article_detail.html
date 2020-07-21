@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Title: {{ article.title }}</h1>
+
+  <p><strong>Author:</strong> <a href="">{{ article.author }}</a></p> <!-- author detail link not yet defined -->
+  <p><strong>Content:</strong> {{ article.content }}</p>
+  <p><strong>Genre:</strong> <a href=""></a>{{ article.genre.all|join:", " }}</p>  
+  <p><strong>Date:</strong> {{ article.pub_date}}</p>
+  <div style="margin-left:20px;margin-top:20px">
+  </div>
+{% endblock %}
